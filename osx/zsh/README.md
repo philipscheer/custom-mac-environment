@@ -1,5 +1,7 @@
 # Custom zsh
 
+![iTerm2 Custom](iterm-custom.png)
+
 
 **Resources**
 
