@@ -18,3 +18,13 @@ brew install zsh-syntax-highlighting
 brew install neofetch
 brew install fontforge
 ```
+
+### References
+--------------
+
+- [Andrea's config][0]
+- [zsh-syntax-highlighting][1]
+
+
+[0](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config#andreas-config)
+[1](https://github.com/zsh-users/zsh-syntax-highlighting)
