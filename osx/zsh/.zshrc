@@ -28,7 +28,7 @@ man() {
 alias mirrorUpdate="sudo reflector --latest 250 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias yaourt="yaourt --pager --color"
 alias pacmanGhost="~/.pacman.sh"
-alias shivita="toilet -f mono12 -F rainbow 'andrea' | ponythink -f winona"
+alias shivita="toilet -f mono12 -F rainbow 'fabiano' | ponythink -f winona"
 alias emacs="emacs -nw"
 alias cat="bat"
 # alias ls="colorls"

@@ -1,4 +1,4 @@
 # Custom to OSX
 
 
-- (ZSH)[zsh.md]
+- [ZSH](zsh.md)
