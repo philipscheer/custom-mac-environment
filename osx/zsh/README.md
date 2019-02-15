@@ -23,6 +23,8 @@ brew install neofetch
 brew install fontforge
 ```
 
+> Instalation diretory **zsh-syntax-highlighting**: /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/
+
 ### References
 --------------
 
