@@ -7,10 +7,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/fabiano.silva/.oh-my-zsh"
 
-# Syntax highlighting and tab completion
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-autoload -Uz compinit
-
 # Coloured man pages using less as pager
 man() {
     env \
@@ -30,7 +26,7 @@ alias yaourt="yaourt --pager --color"
 alias pacmanGhost="~/.pacman.sh"
 alias shivita="toilet -f mono12 -F rainbow 'fabiano' | ponythink -f winona"
 alias emacs="emacs -nw"
-alias cat="bat"
+#alias cat="bat"
 # alias ls="colorls"
 alias ip="ip -c"
 alias rm="rm -i"
@@ -134,3 +130,7 @@ export PATH=~/.local/bin:/Users/fabiano.silva/Library/Python/3.6/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Syntax highlighting and tab completion
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+autoload -Uz compinit
