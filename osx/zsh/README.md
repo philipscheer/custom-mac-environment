@@ -26,6 +26,13 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 > Instalation diretory **zsh-syntax-highlighting**: /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/
 
+**Steps after all instalations**
+
+- cp **.zshrc** to ~/ (see the paths and custom about your paths)
+- Install the fonts: **Source Code Pro Powerline Awesome Regular** and **Font Meslo LG L DZ Regular Nerd Font Complete** (just double click on the files and click in install)
+- Import **Theme Material Design** on iTerm2 (Preferences > Profile > Colors > Color Presets > Import...)
+- Set the fonts on iTerm2 (Preferences > Profile > Text > Change Font > Select **SourceCodePro+Powerline+Awsome Regular** with size 14, after check **Use a different font non-ASCII text** and Change Font > Select **Meslo LG L DZ Regular Nerd Complete** with size 14)
+
 ### References
 --------------
 
