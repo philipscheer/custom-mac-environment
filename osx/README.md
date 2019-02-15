@@ -1,8 +1,9 @@
 # Custom to OSX
 
-This is my instalation and customization to my Mac OS
+> This is my instalation and customization to my Mac OS
 
-**Install**
+### Tools
+---------
 
 * Homebrew (http://osxdaily.com/2018/03/07/how-install-homebrew-mac-os/)
 * Zsh (sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)")
@@ -22,5 +23,7 @@ This is my instalation and customization to my Mac OS
 * Htop (brew install htop)
 
 
+### Customizations
+------------------
 
 - [ZSH](zsh/README.md)
