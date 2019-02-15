@@ -21,6 +21,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 brew install zsh-syntax-highlighting
 brew install neofetch
 brew install fontforge
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
 > Instalation diretory **zsh-syntax-highlighting**: /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/
