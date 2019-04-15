@@ -5,7 +5,7 @@
 # /____|___/_| |_|_|  \___|
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/fabiano.silva/.oh-my-zsh"
+export ZSH="/Users/philip.scheer/.oh-my-zsh"
 
 # Coloured man pages using less as pager
 man() {
@@ -21,21 +21,60 @@ man() {
 }
 
 # Aliases for a few useful commands
-alias mirrorUpdate="sudo reflector --latest 250 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias yaourt="yaourt --pager --color"
+#alias mirrorUpdate="sudo reflector --latest 250 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+#alias yaourt="yaourt --pager --color"
 alias pacmanGhost="~/.pacman.sh"
-alias shivita="toilet -f mono12 -F rainbow 'fabiano' | ponythink -f winona"
+#alias shivita="toilet -f mono12 -F rainbow 'philip' | ponythink -f winona"
 alias emacs="emacs -nw"
 #alias cat="bat"
-# alias ls="colorls"
+#alias ls="colorls"
 alias ip="ip -c"
 alias rm="rm -i"
 alias x="ranger"
 alias c="cmus"
 alias h="htop"
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+# install  colordiff package :)
+alias diff='colordiff'
+# Stop after sending count ECHO_REQUEST packets #
+alias ping='ping -c 5'
+# Do not wait interval 1 second, go fast #
+alias fastping='ping -c 100 -s.2'
+## pass options to free ##
+alias meminfo='free -m -l -t'
+ 
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+ 
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+ 
+## Get server cpu info ##
+alias cpuinfo='lscpu'
+ 
+## older system use /proc/cpuinfo ##
+##alias cpuinfo='less /proc/cpuinfo' ##
+ 
+## get GPU ram on desktop / laptop##
+alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 
+#progress bar on file copy. Useful evenlocal.
+alias cpProgress="rsync --progress -ravz"
+
+# file tree
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+#turn screen off
+alias screenoff="xset dpms force off"
+
+pacmanGhost
 # Show OS info when opening a new terminal
-neofetch
+#neofetch
 
 # Font mode for powerlevel9k
 POWERLEVEL9K_MODE="nerdfont-complete"
@@ -124,13 +163,6 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_user dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs battery)
 
-
-export PATH=~/.local/bin:/Users/fabiano.silva/Library/Python/3.6/bin:$PATH
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Syntax highlighting and tab completion
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -Uz compinit
